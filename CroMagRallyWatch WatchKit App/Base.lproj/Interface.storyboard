@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21225" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21040"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" layout="overlap" id="Y4q-aj-Fy6">
+                            <items>
+                                <imageView alignment="left" id="dGY-BR-Rpa">
+                                    <gestureRecognizers>
+                                        <longPressGestureRecognizer allowableMovement="0.0" minimumPressDuration="0.0" id="igv-YV-fQb">
+                                            <connections>
+                                                <action selector="handleTouch:" destination="AgC-eL-Hgc" id="Ec0-zf-fxz"/>
+                                            </connections>
+                                        </longPressGestureRecognizer>
+                                    </gestureRecognizers>
+                                </imageView>
+                                <button width="40" height="40" alignment="left" hidden="YES" title="⏸️" id="aEL-N1-4eQ">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="pressedPause" destination="AgC-eL-Hgc" id="eVd-cv-dN9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="gameImageView" destination="dGY-BR-Rpa" id="ABW-ed-f9D"/>
+                        <outlet property="pauseButton" destination="aEL-N1-4eQ" id="NjW-ac-Adq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-77"/>
+        </scene>
+    </scenes>
+</document>

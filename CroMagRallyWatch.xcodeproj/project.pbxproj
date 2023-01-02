@@ -1,0 +1,1362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		963846E72939B68400A30BBF /* Cro-Mag Rally.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 963846E62939B68400A30BBF /* Cro-Mag Rally.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		963846ED2939B68400A30BBF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963846EB2939B68400A30BBF /* Interface.storyboard */; };
+		963846EF2939B68900A30BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963846EE2939B68900A30BBF /* Assets.xcassets */; };
+		963846F52939B68900A30BBF /* CroMagRallyWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 963846F42939B68900A30BBF /* CroMagRallyWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		963846FB2939B68900A30BBF /* InterfaceController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 963846FA2939B68900A30BBF /* InterfaceController.mm */; };
+		963846FE2939B68900A30BBF /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 963846FD2939B68900A30BBF /* ExtensionDelegate.m */; };
+		963847012939B68900A30BBF /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963847002939B68900A30BBF /* ComplicationController.m */; };
+		963847032939B68B00A30BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963847022939B68B00A30BBF /* Assets.xcassets */; };
+		9640FE3B29628F0000343A8E /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3629628EEE00343A8E /* Audio */; };
+		9640FE3C29628F0000343A8E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3A29628EEE00343A8E /* Images */; };
+		9640FE3D29628F0000343A8E /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3829628EEE00343A8E /* Models */; };
+		9640FE3E29628F0000343A8E /* Skeletons in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3529628EEE00343A8E /* Skeletons */; };
+		9640FE3F29628F0000343A8E /* Sprites in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3729628EEE00343A8E /* Sprites */; };
+		9640FE4029628F0000343A8E /* System in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3429628EEE00343A8E /* System */; };
+		9640FE4129628F0000343A8E /* Terrain in Resources */ = {isa = PBXBuildFile; fileRef = 9640FE3929628EEE00343A8E /* Terrain */; };
+		96499DB7294596DF009208A9 /* 3DMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DB6294596DF009208A9 /* 3DMath.c */; };
+		96499DB9294596E2009208A9 /* Atlas.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DB8294596E2009208A9 /* Atlas.c */; };
+		96499DBB294596E5009208A9 /* Camera.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DBA294596E5009208A9 /* Camera.c */; };
+		96499DBD294596E8009208A9 /* Effects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DBC294596E8009208A9 /* Effects.c */; };
+		96499DBF294596EC009208A9 /* MetaObjects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DBE294596EC009208A9 /* MetaObjects.c */; };
+		96499DC1294596F1009208A9 /* OGL_Support.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC0294596F1009208A9 /* OGL_Support.c */; };
+		96499DC3294596F7009208A9 /* Pillarbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC2294596F7009208A9 /* Pillarbox.c */; };
+		96499DC5294596FB009208A9 /* QuadMesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC4294596FB009208A9 /* QuadMesh.c */; };
+		96499DC7294596FF009208A9 /* Sprites.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC6294596FF009208A9 /* Sprites.c */; };
+		96499DC929459703009208A9 /* bg3d.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC829459703009208A9 /* bg3d.c */; };
+		96499DCB2945970B009208A9 /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DCA2945970B009208A9 /* Items.c */; };
+		96499DCD2945970F009208A9 /* Traps.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DCC2945970F009208A9 /* Traps.c */; };
+		96499DCF29459712009208A9 /* Triggers.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DCE29459712009208A9 /* Triggers.c */; };
+		96499DD129459717009208A9 /* Player.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD029459717009208A9 /* Player.c */; };
+		96499DD32945971B009208A9 /* Player_Car.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD22945971B009208A9 /* Player_Car.c */; };
+		96499DD52945971F009208A9 /* Player_Submarine.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD42945971F009208A9 /* Player_Submarine.c */; };
+		96499DD729459721009208A9 /* Player_Weapons.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD629459721009208A9 /* Player_Weapons.c */; };
+		96499DD929459724009208A9 /* SkidMarks.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD829459724009208A9 /* SkidMarks.c */; };
+		96499DDB2945973B009208A9 /* Failed.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DDA2945973B009208A9 /* Failed.c */; };
+		96499DDD29459740009208A9 /* Infobar.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DDC29459740009208A9 /* Infobar.c */; };
+		96499DDF29459745009208A9 /* LocalGather.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DDE29459745009208A9 /* LocalGather.c */; };
+		96499DE129459749009208A9 /* MainMenu.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE029459749009208A9 /* MainMenu.c */; };
+		96499DE329459756009208A9 /* MiscScreens.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE229459756009208A9 /* MiscScreens.c */; };
+		96499DE52945975B009208A9 /* Paused.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE42945975B009208A9 /* Paused.c */; };
+		96499DE72945975F009208A9 /* PhysicsEditor.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE62945975F009208A9 /* PhysicsEditor.c */; };
+		96499DE929459763009208A9 /* RaceTimes.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE829459763009208A9 /* RaceTimes.c */; };
+		96499DEB29459769009208A9 /* SelectCharacter.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DEA29459769009208A9 /* SelectCharacter.c */; };
+		96499DED2945976E009208A9 /* SelectTrack.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DEC2945976E009208A9 /* SelectTrack.c */; };
+		96499DEF29459773009208A9 /* SelectVehicle.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DEE29459773009208A9 /* SelectVehicle.c */; };
+		96499DF129459777009208A9 /* Settings.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF029459777009208A9 /* Settings.c */; };
+		96499DF32945977B009208A9 /* UIEffects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF22945977B009208A9 /* UIEffects.c */; };
+		96499DF529459819009208A9 /* Bones.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF429459819009208A9 /* Bones.c */; };
+		96499DF72945981D009208A9 /* SkeletonAnim.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF62945981D009208A9 /* SkeletonAnim.c */; };
+		96499DF929459821009208A9 /* SkeletonJoints.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF829459821009208A9 /* SkeletonJoints.c */; };
+		96499DFB29459827009208A9 /* SkeletonObj.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DFA29459827009208A9 /* SkeletonObj.c */; };
+		96499DFD29459833009208A9 /* Collision.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DFC29459833009208A9 /* Collision.c */; };
+		96499DFF29459837009208A9 /* File.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DFE29459837009208A9 /* File.c */; };
+		96499E012945983B009208A9 /* InputDefaults.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E002945983B009208A9 /* InputDefaults.c */; };
+		96499E032945999F009208A9 /* LZSS.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E022945999F009208A9 /* LZSS.c */; };
+		96499E05294599AC009208A9 /* Localization.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E04294599AC009208A9 /* Localization.c */; };
+		96499E07294599B5009208A9 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E06294599B5009208A9 /* Main.c */; };
+		96499E09294599CF009208A9 /* Menu.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E08294599CF009208A9 /* Menu.c */; };
+		96499E0B294599D9009208A9 /* Misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E0A294599D9009208A9 /* Misc.c */; };
+		96499E0D294599E0009208A9 /* Objects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E0C294599E0009208A9 /* Objects.c */; };
+		96499E0F294599F3009208A9 /* Objects2.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E0E294599F3009208A9 /* Objects2.c */; };
+		96499E1129459A0B009208A9 /* Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1029459A0B009208A9 /* Sound.c */; };
+		96499E1329459A38009208A9 /* Window.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1229459A38009208A9 /* Window.c */; };
+		96499E1529459A44009208A9 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1429459A44009208A9 /* input.c */; };
+		96499E1729459A4C009208A9 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1629459A4C009208A9 /* network.c */; };
+		96499E1929459A6B009208A9 /* stb_image.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1829459A6B009208A9 /* stb_image.c */; };
+		96499E1B29459A79009208A9 /* Checkpoints.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1A29459A79009208A9 /* Checkpoints.c */; };
+		96499E1D29459A7F009208A9 /* Fences.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1C29459A7F009208A9 /* Fences.c */; };
+		96499E1F29459A87009208A9 /* Liquids.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1E29459A87009208A9 /* Liquids.c */; };
+		96499E2129459A93009208A9 /* Paths.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2029459A93009208A9 /* Paths.c */; };
+		96499E2329459A9D009208A9 /* SplineItems.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2229459A9D009208A9 /* SplineItems.c */; };
+		96499E2529459AA1009208A9 /* Terrain.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2429459AA1009208A9 /* Terrain.c */; };
+		96499E2729459AAF009208A9 /* Terrain2.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2629459AAF009208A9 /* Terrain2.c */; };
+		96499E2929459B02009208A9 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2829459B02009208A9 /* Main.cpp */; };
+		96499E7129465CBD009208A9 /* SampleLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 96499E7029465CBD009208A9 /* SampleLib.m */; };
+		96499E7229465CBD009208A9 /* SampleLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96499E6F29465CBD009208A9 /* SampleLib.h */; };
+		96499E7729469E23009208A9 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2829459B02009208A9 /* Main.cpp */; };
+		96499E7829469E23009208A9 /* Terrain2.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2629459AAF009208A9 /* Terrain2.c */; };
+		96499E7929469E23009208A9 /* Terrain.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2429459AA1009208A9 /* Terrain.c */; };
+		96499E7A29469E23009208A9 /* SplineItems.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2229459A9D009208A9 /* SplineItems.c */; };
+		96499E7B29469E23009208A9 /* Paths.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E2029459A93009208A9 /* Paths.c */; };
+		96499E7C29469E23009208A9 /* Liquids.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1E29459A87009208A9 /* Liquids.c */; };
+		96499E7D29469E23009208A9 /* Fences.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1C29459A7F009208A9 /* Fences.c */; };
+		96499E7E29469E23009208A9 /* Checkpoints.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1A29459A79009208A9 /* Checkpoints.c */; };
+		96499E7F29469E23009208A9 /* stb_image.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1829459A6B009208A9 /* stb_image.c */; };
+		96499E8029469E23009208A9 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1629459A4C009208A9 /* network.c */; };
+		96499E8129469E23009208A9 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1429459A44009208A9 /* input.c */; };
+		96499E8229469E23009208A9 /* Window.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1229459A38009208A9 /* Window.c */; };
+		96499E8329469E23009208A9 /* Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E1029459A0B009208A9 /* Sound.c */; };
+		96499E8429469E23009208A9 /* Objects2.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E0E294599F3009208A9 /* Objects2.c */; };
+		96499E8529469E23009208A9 /* Objects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E0C294599E0009208A9 /* Objects.c */; };
+		96499E8629469E23009208A9 /* Misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E0A294599D9009208A9 /* Misc.c */; };
+		96499E8729469E23009208A9 /* Menu.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E08294599CF009208A9 /* Menu.c */; };
+		96499E8829469E23009208A9 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E06294599B5009208A9 /* Main.c */; };
+		96499E8929469E23009208A9 /* Localization.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E04294599AC009208A9 /* Localization.c */; };
+		96499E8A29469E23009208A9 /* LZSS.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E022945999F009208A9 /* LZSS.c */; };
+		96499E8B29469E23009208A9 /* InputDefaults.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499E002945983B009208A9 /* InputDefaults.c */; };
+		96499E8C29469E23009208A9 /* File.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DFE29459837009208A9 /* File.c */; };
+		96499E8D29469E23009208A9 /* Collision.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DFC29459833009208A9 /* Collision.c */; };
+		96499E8E29469E23009208A9 /* SkeletonObj.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DFA29459827009208A9 /* SkeletonObj.c */; };
+		96499E8F29469E23009208A9 /* SkeletonJoints.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF829459821009208A9 /* SkeletonJoints.c */; };
+		96499E9029469E23009208A9 /* SkeletonAnim.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF62945981D009208A9 /* SkeletonAnim.c */; };
+		96499E9129469E23009208A9 /* Bones.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF429459819009208A9 /* Bones.c */; };
+		96499E9229469E23009208A9 /* UIEffects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF22945977B009208A9 /* UIEffects.c */; };
+		96499E9329469E23009208A9 /* Settings.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DF029459777009208A9 /* Settings.c */; };
+		96499E9429469E23009208A9 /* SelectVehicle.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DEE29459773009208A9 /* SelectVehicle.c */; };
+		96499E9529469E23009208A9 /* SelectTrack.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DEC2945976E009208A9 /* SelectTrack.c */; };
+		96499E9629469E23009208A9 /* SelectCharacter.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DEA29459769009208A9 /* SelectCharacter.c */; };
+		96499E9729469E23009208A9 /* RaceTimes.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE829459763009208A9 /* RaceTimes.c */; };
+		96499E9829469E23009208A9 /* PhysicsEditor.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE62945975F009208A9 /* PhysicsEditor.c */; };
+		96499E9929469E23009208A9 /* Paused.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE42945975B009208A9 /* Paused.c */; };
+		96499E9A29469E23009208A9 /* MiscScreens.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE229459756009208A9 /* MiscScreens.c */; };
+		96499E9B29469E23009208A9 /* MainMenu.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DE029459749009208A9 /* MainMenu.c */; };
+		96499E9C29469E23009208A9 /* LocalGather.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DDE29459745009208A9 /* LocalGather.c */; };
+		96499E9D29469E23009208A9 /* Infobar.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DDC29459740009208A9 /* Infobar.c */; };
+		96499E9E29469E23009208A9 /* Failed.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DDA2945973B009208A9 /* Failed.c */; };
+		96499E9F29469E23009208A9 /* SkidMarks.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD829459724009208A9 /* SkidMarks.c */; };
+		96499EA029469E23009208A9 /* Player_Weapons.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD629459721009208A9 /* Player_Weapons.c */; };
+		96499EA129469E23009208A9 /* Player_Submarine.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD42945971F009208A9 /* Player_Submarine.c */; };
+		96499EA229469E23009208A9 /* Player_Car.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD22945971B009208A9 /* Player_Car.c */; };
+		96499EA329469E23009208A9 /* Player.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DD029459717009208A9 /* Player.c */; };
+		96499EA429469E23009208A9 /* Triggers.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DCE29459712009208A9 /* Triggers.c */; };
+		96499EA529469E23009208A9 /* Traps.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DCC2945970F009208A9 /* Traps.c */; };
+		96499EA629469E23009208A9 /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DCA2945970B009208A9 /* Items.c */; };
+		96499EA729469E23009208A9 /* bg3d.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC829459703009208A9 /* bg3d.c */; };
+		96499EA829469E23009208A9 /* Sprites.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC6294596FF009208A9 /* Sprites.c */; };
+		96499EA929469E23009208A9 /* QuadMesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC4294596FB009208A9 /* QuadMesh.c */; };
+		96499EAA29469E23009208A9 /* Pillarbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC2294596F7009208A9 /* Pillarbox.c */; };
+		96499EAB29469E23009208A9 /* OGL_Support.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DC0294596F1009208A9 /* OGL_Support.c */; };
+		96499EAC29469E24009208A9 /* MetaObjects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DBE294596EC009208A9 /* MetaObjects.c */; };
+		96499EAD29469E24009208A9 /* Effects.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DBC294596E8009208A9 /* Effects.c */; };
+		96499EAE29469E24009208A9 /* Camera.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DBA294596E5009208A9 /* Camera.c */; };
+		96499EAF29469E24009208A9 /* Atlas.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DB8294596E2009208A9 /* Atlas.c */; };
+		96499EB029469E24009208A9 /* 3DMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499DB6294596DF009208A9 /* 3DMath.c */; };
+		96499ED6294D69BB009208A9 /* WatchInput.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499ED5294D69BB009208A9 /* WatchInput.c */; };
+		96499EDA294D69CD009208A9 /* WatchInput.c in Sources */ = {isa = PBXBuildFile; fileRef = 96499ED5294D69BB009208A9 /* WatchInput.c */; };
+		9683BC63295D489000987BC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9683BC5C295D489000987BC6 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		960A2649293B0C94007BF766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF4515E54A664D9E9F44AFCA;
+			remoteInfo = CroMagRally;
+		};
+		960A264B293B0C94007BF766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C355B1313244F768017373A;
+			remoteInfo = Pomme;
+		};
+		963846E82939B68400A30BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963846DC2939B68400A30BBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 963846E52939B68400A30BBF;
+			remoteInfo = "CroMagRallyWatch WatchKit App";
+		};
+		963846F62939B68900A30BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963846DC2939B68400A30BBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 963846F32939B68900A30BBF;
+			remoteInfo = "CroMagRallyWatch WatchKit Extension";
+		};
+		96499D3C29450F11009208A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CFA7DAEA24A472699AB6F1A;
+			remoteInfo = ZERO_CHECK;
+		};
+		96499D3E29450F4D009208A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F421BC2F23914D3B8AE6BFF9;
+			remoteInfo = Pomme;
+		};
+		96C41670295558A80095E2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 69C70213719B42F68F3C052B;
+			remoteInfo = "tinygl-static";
+		};
+		96C41672295558A80095E2C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C41668295550D80095E2C7;
+			remoteInfo = "tinygl-static-watch";
+		};
+		96D10210294E362100EEB6A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96638F76294E340D001CD534;
+			remoteInfo = "Pomme-watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9638470A2939B68B00A30BBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				963846F52939B68900A30BBF /* CroMagRallyWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638470E2939B68B00A30BBF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				963846E72939B68400A30BBF /* Cro-Mag Rally.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96499E6B29465CBD009208A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				96499E7229465CBD009208A9 /* SampleLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D10218294E369800EEB6A0 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CroMagRally.xcodeproj; path = ../CroMagRally/build/CroMagRally.xcodeproj; sourceTree = "<group>"; };
+		963846E22939B68400A30BBF /* CroMagRallyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CroMagRallyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963846E62939B68400A30BBF /* Cro-Mag Rally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cro-Mag Rally.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		963846EC2939B68400A30BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		963846EE2939B68900A30BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		963846F42939B68900A30BBF /* CroMagRallyWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CroMagRallyWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		963846F92939B68900A30BBF /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		963846FA2939B68900A30BBF /* InterfaceController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = InterfaceController.mm; sourceTree = "<group>"; };
+		963846FC2939B68900A30BBF /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		963846FD2939B68900A30BBF /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		963846FF2939B68900A30BBF /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		963847002939B68900A30BBF /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		963847022939B68B00A30BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		963847042939B68B00A30BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9640FE3429628EEE00343A8E /* System */ = {isa = PBXFileReference; lastKnownFileType = folder; name = System; path = ../CroMagRally/Data/System; sourceTree = "<group>"; };
+		9640FE3529628EEE00343A8E /* Skeletons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Skeletons; path = ../CroMagRally/Data/Skeletons; sourceTree = "<group>"; };
+		9640FE3629628EEE00343A8E /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Audio; path = ../CroMagRally/Data/Audio; sourceTree = "<group>"; };
+		9640FE3729628EEE00343A8E /* Sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sprites; path = ../CroMagRally/Data/Sprites; sourceTree = "<group>"; };
+		9640FE3829628EEE00343A8E /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = ../CroMagRally/Data/Models; sourceTree = "<group>"; };
+		9640FE3929628EEE00343A8E /* Terrain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Terrain; path = ../CroMagRally/Data/Terrain; sourceTree = "<group>"; };
+		9640FE3A29628EEE00343A8E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = ../CroMagRally/Data/Images; sourceTree = "<group>"; };
+		96499D3829450F03009208A9 /* libCroMagRallyLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCroMagRallyLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96499DB6294596DF009208A9 /* 3DMath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = 3DMath.c; path = ../CroMagRally/Source/3D/3DMath.c; sourceTree = "<group>"; };
+		96499DB8294596E2009208A9 /* Atlas.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Atlas.c; path = ../CroMagRally/Source/3D/Atlas.c; sourceTree = "<group>"; };
+		96499DBA294596E5009208A9 /* Camera.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Camera.c; path = ../CroMagRally/Source/3D/Camera.c; sourceTree = "<group>"; };
+		96499DBC294596E8009208A9 /* Effects.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Effects.c; path = ../CroMagRally/Source/3D/Effects.c; sourceTree = "<group>"; };
+		96499DBE294596EC009208A9 /* MetaObjects.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = MetaObjects.c; path = ../CroMagRally/Source/3D/MetaObjects.c; sourceTree = "<group>"; };
+		96499DC0294596F1009208A9 /* OGL_Support.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = OGL_Support.c; path = ../CroMagRally/Source/3D/OGL_Support.c; sourceTree = "<group>"; };
+		96499DC2294596F7009208A9 /* Pillarbox.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Pillarbox.c; path = ../CroMagRally/Source/3D/Pillarbox.c; sourceTree = "<group>"; };
+		96499DC4294596FB009208A9 /* QuadMesh.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = QuadMesh.c; path = ../CroMagRally/Source/3D/QuadMesh.c; sourceTree = "<group>"; };
+		96499DC6294596FF009208A9 /* Sprites.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Sprites.c; path = ../CroMagRally/Source/3D/Sprites.c; sourceTree = "<group>"; };
+		96499DC829459703009208A9 /* bg3d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bg3d.c; path = ../CroMagRally/Source/3D/bg3d.c; sourceTree = "<group>"; };
+		96499DCA2945970B009208A9 /* Items.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Items.c; path = ../CroMagRally/Source/Items/Items.c; sourceTree = "<group>"; };
+		96499DCC2945970F009208A9 /* Traps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Traps.c; path = ../CroMagRally/Source/Items/Traps.c; sourceTree = "<group>"; };
+		96499DCE29459712009208A9 /* Triggers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Triggers.c; path = ../CroMagRally/Source/Items/Triggers.c; sourceTree = "<group>"; };
+		96499DD029459717009208A9 /* Player.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Player.c; path = ../CroMagRally/Source/Player/Player.c; sourceTree = "<group>"; };
+		96499DD22945971B009208A9 /* Player_Car.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Player_Car.c; path = ../CroMagRally/Source/Player/Player_Car.c; sourceTree = "<group>"; };
+		96499DD42945971F009208A9 /* Player_Submarine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Player_Submarine.c; path = ../CroMagRally/Source/Player/Player_Submarine.c; sourceTree = "<group>"; };
+		96499DD629459721009208A9 /* Player_Weapons.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Player_Weapons.c; path = ../CroMagRally/Source/Player/Player_Weapons.c; sourceTree = "<group>"; };
+		96499DD829459724009208A9 /* SkidMarks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SkidMarks.c; path = ../CroMagRally/Source/Player/SkidMarks.c; sourceTree = "<group>"; };
+		96499DDA2945973B009208A9 /* Failed.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Failed.c; path = ../CroMagRally/Source/Screens/Failed.c; sourceTree = "<group>"; };
+		96499DDC29459740009208A9 /* Infobar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Infobar.c; path = ../CroMagRally/Source/Screens/Infobar.c; sourceTree = "<group>"; };
+		96499DDE29459745009208A9 /* LocalGather.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = LocalGather.c; path = ../CroMagRally/Source/Screens/LocalGather.c; sourceTree = "<group>"; };
+		96499DE029459749009208A9 /* MainMenu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = MainMenu.c; path = ../CroMagRally/Source/Screens/MainMenu.c; sourceTree = "<group>"; };
+		96499DE229459756009208A9 /* MiscScreens.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = MiscScreens.c; path = ../CroMagRally/Source/Screens/MiscScreens.c; sourceTree = "<group>"; };
+		96499DE42945975B009208A9 /* Paused.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Paused.c; path = ../CroMagRally/Source/Screens/Paused.c; sourceTree = "<group>"; };
+		96499DE62945975F009208A9 /* PhysicsEditor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = PhysicsEditor.c; path = ../CroMagRally/Source/Screens/PhysicsEditor.c; sourceTree = "<group>"; };
+		96499DE829459763009208A9 /* RaceTimes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = RaceTimes.c; path = ../CroMagRally/Source/Screens/RaceTimes.c; sourceTree = "<group>"; };
+		96499DEA29459769009208A9 /* SelectCharacter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SelectCharacter.c; path = ../CroMagRally/Source/Screens/SelectCharacter.c; sourceTree = "<group>"; };
+		96499DEC2945976E009208A9 /* SelectTrack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SelectTrack.c; path = ../CroMagRally/Source/Screens/SelectTrack.c; sourceTree = "<group>"; };
+		96499DEE29459773009208A9 /* SelectVehicle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SelectVehicle.c; path = ../CroMagRally/Source/Screens/SelectVehicle.c; sourceTree = "<group>"; };
+		96499DF029459777009208A9 /* Settings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Settings.c; path = ../CroMagRally/Source/Screens/Settings.c; sourceTree = "<group>"; };
+		96499DF22945977B009208A9 /* UIEffects.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UIEffects.c; path = ../CroMagRally/Source/Screens/UIEffects.c; sourceTree = "<group>"; };
+		96499DF429459819009208A9 /* Bones.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Bones.c; path = ../CroMagRally/Source/Skeleton/Bones.c; sourceTree = "<group>"; };
+		96499DF62945981D009208A9 /* SkeletonAnim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SkeletonAnim.c; path = ../CroMagRally/Source/Skeleton/SkeletonAnim.c; sourceTree = "<group>"; };
+		96499DF829459821009208A9 /* SkeletonJoints.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SkeletonJoints.c; path = ../CroMagRally/Source/Skeleton/SkeletonJoints.c; sourceTree = "<group>"; };
+		96499DFA29459827009208A9 /* SkeletonObj.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SkeletonObj.c; path = ../CroMagRally/Source/Skeleton/SkeletonObj.c; sourceTree = "<group>"; };
+		96499DFC29459833009208A9 /* Collision.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Collision.c; path = ../CroMagRally/Source/System/Collision.c; sourceTree = "<group>"; };
+		96499DFE29459837009208A9 /* File.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = File.c; path = ../CroMagRally/Source/System/File.c; sourceTree = "<group>"; };
+		96499E002945983B009208A9 /* InputDefaults.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = InputDefaults.c; path = ../CroMagRally/Source/System/InputDefaults.c; sourceTree = "<group>"; };
+		96499E022945999F009208A9 /* LZSS.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = LZSS.c; path = ../CroMagRally/Source/System/LZSS.c; sourceTree = "<group>"; };
+		96499E04294599AC009208A9 /* Localization.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Localization.c; path = ../CroMagRally/Source/System/Localization.c; sourceTree = "<group>"; };
+		96499E06294599B5009208A9 /* Main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Main.c; path = ../CroMagRally/Source/System/Main.c; sourceTree = "<group>"; };
+		96499E08294599CF009208A9 /* Menu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Menu.c; path = ../CroMagRally/Source/System/Menu.c; sourceTree = "<group>"; };
+		96499E0A294599D9009208A9 /* Misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Misc.c; path = ../CroMagRally/Source/System/Misc.c; sourceTree = "<group>"; };
+		96499E0C294599E0009208A9 /* Objects.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Objects.c; path = ../CroMagRally/Source/System/Objects.c; sourceTree = "<group>"; };
+		96499E0E294599F3009208A9 /* Objects2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Objects2.c; path = ../CroMagRally/Source/System/Objects2.c; sourceTree = "<group>"; };
+		96499E1029459A0B009208A9 /* Sound.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Sound.c; path = ../CroMagRally/Source/System/Sound.c; sourceTree = "<group>"; };
+		96499E1229459A38009208A9 /* Window.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Window.c; path = ../CroMagRally/Source/System/Window.c; sourceTree = "<group>"; };
+		96499E1429459A44009208A9 /* input.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = input.c; path = ../CroMagRally/Source/System/input.c; sourceTree = "<group>"; };
+		96499E1629459A4C009208A9 /* network.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = network.c; path = ../CroMagRally/Source/System/network.c; sourceTree = "<group>"; };
+		96499E1829459A6B009208A9 /* stb_image.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = stb_image.c; path = ../CroMagRally/Source/System/stb_image.c; sourceTree = "<group>"; };
+		96499E1A29459A79009208A9 /* Checkpoints.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Checkpoints.c; path = ../CroMagRally/Source/Terrain/Checkpoints.c; sourceTree = "<group>"; };
+		96499E1C29459A7F009208A9 /* Fences.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Fences.c; path = ../CroMagRally/Source/Terrain/Fences.c; sourceTree = "<group>"; };
+		96499E1E29459A87009208A9 /* Liquids.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Liquids.c; path = ../CroMagRally/Source/Terrain/Liquids.c; sourceTree = "<group>"; };
+		96499E2029459A93009208A9 /* Paths.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Paths.c; path = ../CroMagRally/Source/Terrain/Paths.c; sourceTree = "<group>"; };
+		96499E2229459A9D009208A9 /* SplineItems.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SplineItems.c; path = ../CroMagRally/Source/Terrain/SplineItems.c; sourceTree = "<group>"; };
+		96499E2429459AA1009208A9 /* Terrain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Terrain.c; path = ../CroMagRally/Source/Terrain/Terrain.c; sourceTree = "<group>"; };
+		96499E2629459AAF009208A9 /* Terrain2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Terrain2.c; path = ../CroMagRally/Source/Terrain/Terrain2.c; sourceTree = "<group>"; };
+		96499E2829459B02009208A9 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../CroMagRally/Source/Main.cpp; sourceTree = "<group>"; };
+		96499E6D29465CBD009208A9 /* libCroMagRally.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCroMagRally.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96499E6F29465CBD009208A9 /* SampleLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleLib.h; sourceTree = "<group>"; };
+		96499E7029465CBD009208A9 /* SampleLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleLib.m; sourceTree = "<group>"; };
+		96499E7629465E99009208A9 /* CroMagRally.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CroMagRally.hpp; sourceTree = "<group>"; };
+		96499ED5294D69BB009208A9 /* WatchInput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = WatchInput.c; path = ../CroMagRally/Source/System/WatchInput.c; sourceTree = "<group>"; };
+		9683BC5C295D489000987BC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		963846F12939B68900A30BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9683BC63295D489000987BC6 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96499D3629450F03009208A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96499E6A29465CBD009208A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960A2641293B0C94007BF766 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960A264A293B0C94007BF766 /* CroMagRally */,
+				960A264C293B0C94007BF766 /* libPomme.a */,
+				96C41671295558A80095E2C7 /* libtinygl-static.a */,
+				96D10211294E362100EEB6A0 /* libPomme-watch.a */,
+				96C41673295558A80095E2C7 /* libtinygl-static-watch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963846DB2939B68400A30BBF = {
+			isa = PBXGroup;
+			children = (
+				9680E813294ED54C007929D9 /* Resources */,
+				96499E2A29459BF7009208A9 /* CroMagRallyLib */,
+				963846EA2939B68400A30BBF /* CroMagRallyWatch WatchKit App */,
+				963846F82939B68900A30BBF /* CroMagRallyWatch WatchKit Extension */,
+				960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */,
+				96499E6E29465CBD009208A9 /* SampleLib */,
+				963846E32939B68400A30BBF /* Products */,
+				96499E6729465C22009208A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		963846E32939B68400A30BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963846E22939B68400A30BBF /* CroMagRallyWatch.app */,
+				963846E62939B68400A30BBF /* Cro-Mag Rally.app */,
+				963846F42939B68900A30BBF /* CroMagRallyWatch WatchKit Extension.appex */,
+				96499D3829450F03009208A9 /* libCroMagRallyLib.a */,
+				96499E6D29465CBD009208A9 /* libCroMagRally.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963846EA2939B68400A30BBF /* CroMagRallyWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				963846EB2939B68400A30BBF /* Interface.storyboard */,
+				963846EE2939B68900A30BBF /* Assets.xcassets */,
+			);
+			path = "CroMagRallyWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		963846F82939B68900A30BBF /* CroMagRallyWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				963846F92939B68900A30BBF /* InterfaceController.h */,
+				963846FA2939B68900A30BBF /* InterfaceController.mm */,
+				963846FC2939B68900A30BBF /* ExtensionDelegate.h */,
+				963846FD2939B68900A30BBF /* ExtensionDelegate.m */,
+				963846FF2939B68900A30BBF /* ComplicationController.h */,
+				963847002939B68900A30BBF /* ComplicationController.m */,
+				963847022939B68B00A30BBF /* Assets.xcassets */,
+				963847042939B68B00A30BBF /* Info.plist */,
+				96499E7629465E99009208A9 /* CroMagRally.hpp */,
+			);
+			path = "CroMagRallyWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		96499E2A29459BF7009208A9 /* CroMagRallyLib */ = {
+			isa = PBXGroup;
+			children = (
+				96499ED5294D69BB009208A9 /* WatchInput.c */,
+				96499E2829459B02009208A9 /* Main.cpp */,
+				96499E2629459AAF009208A9 /* Terrain2.c */,
+				96499E2429459AA1009208A9 /* Terrain.c */,
+				96499E2229459A9D009208A9 /* SplineItems.c */,
+				96499E2029459A93009208A9 /* Paths.c */,
+				96499E1E29459A87009208A9 /* Liquids.c */,
+				96499E1C29459A7F009208A9 /* Fences.c */,
+				96499E1A29459A79009208A9 /* Checkpoints.c */,
+				96499E1829459A6B009208A9 /* stb_image.c */,
+				96499E1629459A4C009208A9 /* network.c */,
+				96499E1429459A44009208A9 /* input.c */,
+				96499E1229459A38009208A9 /* Window.c */,
+				96499E1029459A0B009208A9 /* Sound.c */,
+				96499E0E294599F3009208A9 /* Objects2.c */,
+				96499E0C294599E0009208A9 /* Objects.c */,
+				96499E0A294599D9009208A9 /* Misc.c */,
+				96499E08294599CF009208A9 /* Menu.c */,
+				96499E06294599B5009208A9 /* Main.c */,
+				96499E04294599AC009208A9 /* Localization.c */,
+				96499E022945999F009208A9 /* LZSS.c */,
+				96499E002945983B009208A9 /* InputDefaults.c */,
+				96499DFE29459837009208A9 /* File.c */,
+				96499DFC29459833009208A9 /* Collision.c */,
+				96499DFA29459827009208A9 /* SkeletonObj.c */,
+				96499DF829459821009208A9 /* SkeletonJoints.c */,
+				96499DF62945981D009208A9 /* SkeletonAnim.c */,
+				96499DF429459819009208A9 /* Bones.c */,
+				96499DF22945977B009208A9 /* UIEffects.c */,
+				96499DF029459777009208A9 /* Settings.c */,
+				96499DEE29459773009208A9 /* SelectVehicle.c */,
+				96499DEC2945976E009208A9 /* SelectTrack.c */,
+				96499DEA29459769009208A9 /* SelectCharacter.c */,
+				96499DE829459763009208A9 /* RaceTimes.c */,
+				96499DE62945975F009208A9 /* PhysicsEditor.c */,
+				96499DE42945975B009208A9 /* Paused.c */,
+				96499DE229459756009208A9 /* MiscScreens.c */,
+				96499DE029459749009208A9 /* MainMenu.c */,
+				96499DDE29459745009208A9 /* LocalGather.c */,
+				96499DDC29459740009208A9 /* Infobar.c */,
+				96499DDA2945973B009208A9 /* Failed.c */,
+				96499DD829459724009208A9 /* SkidMarks.c */,
+				96499DD629459721009208A9 /* Player_Weapons.c */,
+				96499DD42945971F009208A9 /* Player_Submarine.c */,
+				96499DD22945971B009208A9 /* Player_Car.c */,
+				96499DD029459717009208A9 /* Player.c */,
+				96499DCE29459712009208A9 /* Triggers.c */,
+				96499DCC2945970F009208A9 /* Traps.c */,
+				96499DCA2945970B009208A9 /* Items.c */,
+				96499DC829459703009208A9 /* bg3d.c */,
+				96499DC6294596FF009208A9 /* Sprites.c */,
+				96499DC4294596FB009208A9 /* QuadMesh.c */,
+				96499DC2294596F7009208A9 /* Pillarbox.c */,
+				96499DC0294596F1009208A9 /* OGL_Support.c */,
+				96499DBE294596EC009208A9 /* MetaObjects.c */,
+				96499DBC294596E8009208A9 /* Effects.c */,
+				96499DBA294596E5009208A9 /* Camera.c */,
+				96499DB8294596E2009208A9 /* Atlas.c */,
+				96499DB6294596DF009208A9 /* 3DMath.c */,
+			);
+			name = CroMagRallyLib;
+			sourceTree = "<group>";
+		};
+		96499E6729465C22009208A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9683BC5C295D489000987BC6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96499E6E29465CBD009208A9 /* SampleLib */ = {
+			isa = PBXGroup;
+			children = (
+				96499E6F29465CBD009208A9 /* SampleLib.h */,
+				96499E7029465CBD009208A9 /* SampleLib.m */,
+			);
+			path = SampleLib;
+			sourceTree = "<group>";
+		};
+		9680E813294ED54C007929D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9640FE3629628EEE00343A8E /* Audio */,
+				9640FE3A29628EEE00343A8E /* Images */,
+				9640FE3829628EEE00343A8E /* Models */,
+				9640FE3529628EEE00343A8E /* Skeletons */,
+				9640FE3729628EEE00343A8E /* Sprites */,
+				9640FE3429628EEE00343A8E /* System */,
+				9640FE3929628EEE00343A8E /* Terrain */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		96499D3429450F03009208A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		963846E12939B68400A30BBF /* CroMagRallyWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9638470F2939B68B00A30BBF /* Build configuration list for PBXNativeTarget "CroMagRallyWatch" */;
+			buildPhases = (
+				963846E02939B68400A30BBF /* Resources */,
+				9638470E2939B68B00A30BBF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				963846E92939B68400A30BBF /* PBXTargetDependency */,
+			);
+			name = CroMagRallyWatch;
+			productName = CroMagRallyWatch;
+			productReference = 963846E22939B68400A30BBF /* CroMagRallyWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		963846E52939B68400A30BBF /* CroMagRallyWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9638470B2939B68B00A30BBF /* Build configuration list for PBXNativeTarget "CroMagRallyWatch WatchKit App" */;
+			buildPhases = (
+				963846E42939B68400A30BBF /* Resources */,
+				9638470A2939B68B00A30BBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				963846F72939B68900A30BBF /* PBXTargetDependency */,
+			);
+			name = "CroMagRallyWatch WatchKit App";
+			productName = "CroMagRallyWatch WatchKit App";
+			productReference = 963846E62939B68400A30BBF /* Cro-Mag Rally.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		963846F32939B68900A30BBF /* CroMagRallyWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963847072939B68B00A30BBF /* Build configuration list for PBXNativeTarget "CroMagRallyWatch WatchKit Extension" */;
+			buildPhases = (
+				963846F02939B68900A30BBF /* Sources */,
+				963846F12939B68900A30BBF /* Frameworks */,
+				963846F22939B68900A30BBF /* Resources */,
+				96D10218294E369800EEB6A0 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CroMagRallyWatch WatchKit Extension";
+			productName = "CroMagRallyWatch WatchKit Extension";
+			productReference = 963846F42939B68900A30BBF /* CroMagRallyWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		96499D3729450F03009208A9 /* CroMagRallyLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96499D3929450F03009208A9 /* Build configuration list for PBXNativeTarget "CroMagRallyLib" */;
+			buildPhases = (
+				96499D3429450F03009208A9 /* Headers */,
+				96499D3529450F03009208A9 /* Sources */,
+				96499D3629450F03009208A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96499D3D29450F11009208A9 /* PBXTargetDependency */,
+				96499D3F29450F4D009208A9 /* PBXTargetDependency */,
+			);
+			name = CroMagRallyLib;
+			productName = CroMagRallyLib;
+			productReference = 96499D3829450F03009208A9 /* libCroMagRallyLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		96499E6C29465CBD009208A9 /* CroMagRally */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96499E7329465CBD009208A9 /* Build configuration list for PBXNativeTarget "CroMagRally" */;
+			buildPhases = (
+				96499E6929465CBD009208A9 /* Sources */,
+				96499E6A29465CBD009208A9 /* Frameworks */,
+				96499E6B29465CBD009208A9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CroMagRally;
+			productName = SampleLib;
+			productReference = 96499E6D29465CBD009208A9 /* libCroMagRally.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		963846DC2939B68400A30BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					963846E12939B68400A30BBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					963846E52939B68400A30BBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					963846F32939B68900A30BBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					96499D3729450F03009208A9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					96499E6C29465CBD009208A9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 963846DF2939B68400A30BBF /* Build configuration list for PBXProject "CroMagRallyWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 963846DB2939B68400A30BBF;
+			productRefGroup = 963846E32939B68400A30BBF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 960A2641293B0C94007BF766 /* Products */;
+					ProjectRef = 960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				963846E12939B68400A30BBF /* CroMagRallyWatch */,
+				963846E52939B68400A30BBF /* CroMagRallyWatch WatchKit App */,
+				963846F32939B68900A30BBF /* CroMagRallyWatch WatchKit Extension */,
+				96499D3729450F03009208A9 /* CroMagRallyLib */,
+				96499E6C29465CBD009208A9 /* CroMagRally */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		960A264A293B0C94007BF766 /* CroMagRally */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = CroMagRally;
+			path = CroMagRally.app;
+			remoteRef = 960A2649293B0C94007BF766 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		960A264C293B0C94007BF766 /* libPomme.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPomme.a;
+			remoteRef = 960A264B293B0C94007BF766 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96C41671295558A80095E2C7 /* libtinygl-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libtinygl-static.a";
+			remoteRef = 96C41670295558A80095E2C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96C41673295558A80095E2C7 /* libtinygl-static-watch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libtinygl-static-watch.a";
+			remoteRef = 96C41672295558A80095E2C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		96D10211294E362100EEB6A0 /* libPomme-watch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPomme-watch.a";
+			remoteRef = 96D10210294E362100EEB6A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		963846E02939B68400A30BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963846E42939B68400A30BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963846EF2939B68900A30BBF /* Assets.xcassets in Resources */,
+				963846ED2939B68400A30BBF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963846F22939B68900A30BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9640FE3B29628F0000343A8E /* Audio in Resources */,
+				9640FE3C29628F0000343A8E /* Images in Resources */,
+				9640FE3D29628F0000343A8E /* Models in Resources */,
+				9640FE3E29628F0000343A8E /* Skeletons in Resources */,
+				9640FE3F29628F0000343A8E /* Sprites in Resources */,
+				9640FE4029628F0000343A8E /* System in Resources */,
+				9640FE4129628F0000343A8E /* Terrain in Resources */,
+				963847032939B68B00A30BBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		963846F02939B68900A30BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96499E7729469E23009208A9 /* Main.cpp in Sources */,
+				96499E7829469E23009208A9 /* Terrain2.c in Sources */,
+				96499E7929469E23009208A9 /* Terrain.c in Sources */,
+				96499E7A29469E23009208A9 /* SplineItems.c in Sources */,
+				96499E7B29469E23009208A9 /* Paths.c in Sources */,
+				96499E7C29469E23009208A9 /* Liquids.c in Sources */,
+				96499E7D29469E23009208A9 /* Fences.c in Sources */,
+				96499E7E29469E23009208A9 /* Checkpoints.c in Sources */,
+				96499E7F29469E23009208A9 /* stb_image.c in Sources */,
+				96499E8029469E23009208A9 /* network.c in Sources */,
+				96499E8129469E23009208A9 /* input.c in Sources */,
+				96499E8229469E23009208A9 /* Window.c in Sources */,
+				96499E8329469E23009208A9 /* Sound.c in Sources */,
+				96499E8429469E23009208A9 /* Objects2.c in Sources */,
+				96499E8529469E23009208A9 /* Objects.c in Sources */,
+				96499E8629469E23009208A9 /* Misc.c in Sources */,
+				96499E8729469E23009208A9 /* Menu.c in Sources */,
+				96499E8829469E23009208A9 /* Main.c in Sources */,
+				96499E8929469E23009208A9 /* Localization.c in Sources */,
+				96499E8A29469E23009208A9 /* LZSS.c in Sources */,
+				96499E8B29469E23009208A9 /* InputDefaults.c in Sources */,
+				96499E8C29469E23009208A9 /* File.c in Sources */,
+				96499E8D29469E23009208A9 /* Collision.c in Sources */,
+				96499E8E29469E23009208A9 /* SkeletonObj.c in Sources */,
+				96499E8F29469E23009208A9 /* SkeletonJoints.c in Sources */,
+				96499E9029469E23009208A9 /* SkeletonAnim.c in Sources */,
+				96499E9129469E23009208A9 /* Bones.c in Sources */,
+				96499E9229469E23009208A9 /* UIEffects.c in Sources */,
+				96499E9329469E23009208A9 /* Settings.c in Sources */,
+				96499E9429469E23009208A9 /* SelectVehicle.c in Sources */,
+				96499E9529469E23009208A9 /* SelectTrack.c in Sources */,
+				96499E9629469E23009208A9 /* SelectCharacter.c in Sources */,
+				96499E9729469E23009208A9 /* RaceTimes.c in Sources */,
+				96499E9829469E23009208A9 /* PhysicsEditor.c in Sources */,
+				96499E9929469E23009208A9 /* Paused.c in Sources */,
+				96499E9A29469E23009208A9 /* MiscScreens.c in Sources */,
+				96499E9B29469E23009208A9 /* MainMenu.c in Sources */,
+				96499E9C29469E23009208A9 /* LocalGather.c in Sources */,
+				96499E9D29469E23009208A9 /* Infobar.c in Sources */,
+				96499E9E29469E23009208A9 /* Failed.c in Sources */,
+				96499E9F29469E23009208A9 /* SkidMarks.c in Sources */,
+				96499EA029469E23009208A9 /* Player_Weapons.c in Sources */,
+				96499EA129469E23009208A9 /* Player_Submarine.c in Sources */,
+				96499EA229469E23009208A9 /* Player_Car.c in Sources */,
+				96499EA329469E23009208A9 /* Player.c in Sources */,
+				96499EA429469E23009208A9 /* Triggers.c in Sources */,
+				96499EA529469E23009208A9 /* Traps.c in Sources */,
+				96499EA629469E23009208A9 /* Items.c in Sources */,
+				96499EA729469E23009208A9 /* bg3d.c in Sources */,
+				96499EA829469E23009208A9 /* Sprites.c in Sources */,
+				96499EA929469E23009208A9 /* QuadMesh.c in Sources */,
+				96499EAA29469E23009208A9 /* Pillarbox.c in Sources */,
+				96499EAB29469E23009208A9 /* OGL_Support.c in Sources */,
+				96499EAC29469E24009208A9 /* MetaObjects.c in Sources */,
+				96499EAD29469E24009208A9 /* Effects.c in Sources */,
+				96499EAE29469E24009208A9 /* Camera.c in Sources */,
+				96499EAF29469E24009208A9 /* Atlas.c in Sources */,
+				96499EB029469E24009208A9 /* 3DMath.c in Sources */,
+				963847012939B68900A30BBF /* ComplicationController.m in Sources */,
+				963846FE2939B68900A30BBF /* ExtensionDelegate.m in Sources */,
+				963846FB2939B68900A30BBF /* InterfaceController.mm in Sources */,
+				96499ED6294D69BB009208A9 /* WatchInput.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96499D3529450F03009208A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96499DB7294596DF009208A9 /* 3DMath.c in Sources */,
+				96499DB9294596E2009208A9 /* Atlas.c in Sources */,
+				96499DBB294596E5009208A9 /* Camera.c in Sources */,
+				96499DBD294596E8009208A9 /* Effects.c in Sources */,
+				96499DBF294596EC009208A9 /* MetaObjects.c in Sources */,
+				96499DC1294596F1009208A9 /* OGL_Support.c in Sources */,
+				96499DC3294596F7009208A9 /* Pillarbox.c in Sources */,
+				96499DC5294596FB009208A9 /* QuadMesh.c in Sources */,
+				96499DC7294596FF009208A9 /* Sprites.c in Sources */,
+				96499DC929459703009208A9 /* bg3d.c in Sources */,
+				96499DCB2945970B009208A9 /* Items.c in Sources */,
+				96499DCD2945970F009208A9 /* Traps.c in Sources */,
+				96499DCF29459712009208A9 /* Triggers.c in Sources */,
+				96499E2929459B02009208A9 /* Main.cpp in Sources */,
+				96499DD129459717009208A9 /* Player.c in Sources */,
+				96499DD32945971B009208A9 /* Player_Car.c in Sources */,
+				96499DD52945971F009208A9 /* Player_Submarine.c in Sources */,
+				96499DD729459721009208A9 /* Player_Weapons.c in Sources */,
+				96499DD929459724009208A9 /* SkidMarks.c in Sources */,
+				96499DDB2945973B009208A9 /* Failed.c in Sources */,
+				96499DDD29459740009208A9 /* Infobar.c in Sources */,
+				96499DDF29459745009208A9 /* LocalGather.c in Sources */,
+				96499DE129459749009208A9 /* MainMenu.c in Sources */,
+				96499DE329459756009208A9 /* MiscScreens.c in Sources */,
+				96499DE52945975B009208A9 /* Paused.c in Sources */,
+				96499DE72945975F009208A9 /* PhysicsEditor.c in Sources */,
+				96499DE929459763009208A9 /* RaceTimes.c in Sources */,
+				96499DEB29459769009208A9 /* SelectCharacter.c in Sources */,
+				96499DED2945976E009208A9 /* SelectTrack.c in Sources */,
+				96499DEF29459773009208A9 /* SelectVehicle.c in Sources */,
+				96499DF129459777009208A9 /* Settings.c in Sources */,
+				96499DF32945977B009208A9 /* UIEffects.c in Sources */,
+				96499DF529459819009208A9 /* Bones.c in Sources */,
+				96499DF72945981D009208A9 /* SkeletonAnim.c in Sources */,
+				96499DF929459821009208A9 /* SkeletonJoints.c in Sources */,
+				96499DFB29459827009208A9 /* SkeletonObj.c in Sources */,
+				96499EDA294D69CD009208A9 /* WatchInput.c in Sources */,
+				96499DFD29459833009208A9 /* Collision.c in Sources */,
+				96499DFF29459837009208A9 /* File.c in Sources */,
+				96499E012945983B009208A9 /* InputDefaults.c in Sources */,
+				96499E032945999F009208A9 /* LZSS.c in Sources */,
+				96499E05294599AC009208A9 /* Localization.c in Sources */,
+				96499E07294599B5009208A9 /* Main.c in Sources */,
+				96499E09294599CF009208A9 /* Menu.c in Sources */,
+				96499E0B294599D9009208A9 /* Misc.c in Sources */,
+				96499E0D294599E0009208A9 /* Objects.c in Sources */,
+				96499E0F294599F3009208A9 /* Objects2.c in Sources */,
+				96499E1129459A0B009208A9 /* Sound.c in Sources */,
+				96499E1329459A38009208A9 /* Window.c in Sources */,
+				96499E1529459A44009208A9 /* input.c in Sources */,
+				96499E1729459A4C009208A9 /* network.c in Sources */,
+				96499E1929459A6B009208A9 /* stb_image.c in Sources */,
+				96499E1B29459A79009208A9 /* Checkpoints.c in Sources */,
+				96499E1D29459A7F009208A9 /* Fences.c in Sources */,
+				96499E1F29459A87009208A9 /* Liquids.c in Sources */,
+				96499E2129459A93009208A9 /* Paths.c in Sources */,
+				96499E2329459A9D009208A9 /* SplineItems.c in Sources */,
+				96499E2529459AA1009208A9 /* Terrain.c in Sources */,
+				96499E2729459AAF009208A9 /* Terrain2.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96499E6929465CBD009208A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96499E7129465CBD009208A9 /* SampleLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		963846E92939B68400A30BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 963846E52939B68400A30BBF /* CroMagRallyWatch WatchKit App */;
+			targetProxy = 963846E82939B68400A30BBF /* PBXContainerItemProxy */;
+		};
+		963846F72939B68900A30BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 963846F32939B68900A30BBF /* CroMagRallyWatch WatchKit Extension */;
+			targetProxy = 963846F62939B68900A30BBF /* PBXContainerItemProxy */;
+		};
+		96499D3D29450F11009208A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZERO_CHECK;
+			targetProxy = 96499D3C29450F11009208A9 /* PBXContainerItemProxy */;
+		};
+		96499D3F29450F4D009208A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pomme;
+			targetProxy = 96499D3E29450F4D009208A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		963846EB2939B68400A30BBF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963846EC2939B68400A30BBF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		963847052939B68B00A30BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		963847062939B68B00A30BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		963847082939B68B00A30BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCL26XB43G;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'HQ_TERRAIN=1'",
+					"'ENABLE_LOADING_SCREEN=0'",
+					GL_SILENCE_DEPRECATION,
+					"DEBUG=1",
+					_DEBUG,
+					TINYGL,
+					WATCH,
+					"$(inherited)",
+					PORTRAIT,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/wchang/Documents/CroMagRally/extern/Pomme/src,
+					/Users/wchang/Documents/CroMagRally/extern/tinygl/include,
+					/Users/wchang/Documents/CroMagRally/Source/Headers,
+				);
+				INFOPLIST_FILE = "CroMagRallyWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CroMagRallyWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = ExtensionDelegate;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"/Users/wchang/Documents/CroMagRally/build/extern/Pomme/Debug/libPomme-watch.a",
+					"/Users/wchang/Documents/CroMagRally/build/extern/tinygl/src/Debug/libtinygl-static-watch.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Debug;
+		};
+		963847092939B68B00A30BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCL26XB43G;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'HQ_TERRAIN=1'",
+					"'ENABLE_LOADING_SCREEN=0'",
+					GL_SILENCE_DEPRECATION,
+					TINYGL,
+					WATCH,
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/wchang/Documents/CroMagRally/extern/Pomme/src,
+					/Users/wchang/Documents/CroMagRally/extern/tinygl/include,
+					/Users/wchang/Documents/CroMagRally/Source/Headers,
+				);
+				INFOPLIST_FILE = "CroMagRallyWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CroMagRallyWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = ExtensionDelegate;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"/Users/wchang/Documents/CroMagRally/build/extern/Pomme/Release/libPomme-watch.a",
+					"/Users/wchang/Documents/CroMagRally/build/extern/tinygl/src/Release/libtinygl-static-watch.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Release;
+		};
+		9638470C2939B68B00A30BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCL26XB43G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CroMagRallyWatch_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch.watchkitapp;
+				PRODUCT_NAME = "Cro-Mag Rally";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Debug;
+		};
+		9638470D2939B68B00A30BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCL26XB43G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CroMagRallyWatch_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch.watchkitapp;
+				PRODUCT_NAME = "Cro-Mag Rally";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+			};
+			name = Release;
+		};
+		963847102939B68B00A30BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCL26XB43G;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		963847112939B68B00A30BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NCL26XB43G;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		96499D3A29450F03009208A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'HQ_TERRAIN=1'",
+					"'ENABLE_LOADING_SCREEN=0'",
+					GL_SILENCE_DEPRECATION,
+					TINYGL,
+					_DEBUG,
+					"DEBUG=1",
+					WATCH,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Users/wchang/Documents/CroMagRally/extern/Pomme/src,
+					/Users/wchang/Documents/CroMagRally/extern/tinygl/include,
+					/Users/wchang/Documents/CroMagRally/Source/Headers,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96499D3B29450F03009208A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'HQ_TERRAIN=1'",
+					"'ENABLE_LOADING_SCREEN=0'",
+					GL_SILENCE_DEPRECATION,
+					TINYGL,
+					WATCH,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Users/wchang/Documents/CroMagRally/extern/Pomme/src,
+					/Users/wchang/Documents/CroMagRally/extern/tinygl/include,
+					/Users/wchang/Documents/CroMagRally/Source/Headers,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		96499E7429465CBD009208A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96499E7529465CBD009208A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		963846DF2939B68400A30BBF /* Build configuration list for PBXProject "CroMagRallyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963847052939B68B00A30BBF /* Debug */,
+				963847062939B68B00A30BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963847072939B68B00A30BBF /* Build configuration list for PBXNativeTarget "CroMagRallyWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963847082939B68B00A30BBF /* Debug */,
+				963847092939B68B00A30BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9638470B2939B68B00A30BBF /* Build configuration list for PBXNativeTarget "CroMagRallyWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9638470C2939B68B00A30BBF /* Debug */,
+				9638470D2939B68B00A30BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9638470F2939B68B00A30BBF /* Build configuration list for PBXNativeTarget "CroMagRallyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963847102939B68B00A30BBF /* Debug */,
+				963847112939B68B00A30BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96499D3929450F03009208A9 /* Build configuration list for PBXNativeTarget "CroMagRallyLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96499D3A29450F03009208A9 /* Debug */,
+				96499D3B29450F03009208A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96499E7329465CBD009208A9 /* Build configuration list for PBXNativeTarget "CroMagRally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96499E7429465CBD009208A9 /* Debug */,
+				96499E7529465CBD009208A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 963846DC2939B68400A30BBF /* Project object */;
+}
