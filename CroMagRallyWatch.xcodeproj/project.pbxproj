@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961B14E8297CF48000A1F960 /* Backgrounds in Resources */ = {isa = PBXBuildFile; fileRef = 961B14E7297CF48000A1F960 /* Backgrounds */; };
 		963846E72939B68400A30BBF /* Cro-Mag Rally.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 963846E62939B68400A30BBF /* Cro-Mag Rally.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		963846ED2939B68400A30BBF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963846EB2939B68400A30BBF /* Interface.storyboard */; };
 		963846EF2939B68900A30BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963846EE2939B68900A30BBF /* Assets.xcassets */; };
@@ -258,6 +259,7 @@
 
 /* Begin PBXFileReference section */
 		960A2640293B0C94007BF766 /* CroMagRally.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CroMagRally.xcodeproj; path = ../CroMagRally/build/CroMagRally.xcodeproj; sourceTree = "<group>"; };
+		961B14E7297CF48000A1F960 /* Backgrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Backgrounds; path = ../CroMagRally/Data/Backgrounds; sourceTree = "<group>"; };
 		963846E22939B68400A30BBF /* CroMagRallyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CroMagRallyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963846E62939B68400A30BBF /* Cro-Mag Rally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cro-Mag Rally.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		963846EC2939B68400A30BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 			isa = PBXGroup;
 			children = (
 				9640FE3629628EEE00343A8E /* Audio */,
+				961B14E7297CF48000A1F960 /* Backgrounds */,
 				9640FE3A29628EEE00343A8E /* Images */,
 				9640FE3829628EEE00343A8E /* Models */,
 				9640FE3529628EEE00343A8E /* Skeletons */,
@@ -749,6 +752,7 @@
 				9640FE3B29628F0000343A8E /* Audio in Resources */,
 				9640FE3C29628F0000343A8E /* Images in Resources */,
 				9640FE3D29628F0000343A8E /* Models in Resources */,
+				961B14E8297CF48000A1F960 /* Backgrounds in Resources */,
 				9640FE3E29628F0000343A8E /* Skeletons in Resources */,
 				9640FE3F29628F0000343A8E /* Sprites in Resources */,
 				9640FE4029628F0000343A8E /* System in Resources */,
@@ -1086,8 +1090,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
-					"/Users/wchang/Documents/CroMagRally/build/extern/Pomme/Debug/libPomme-watch.a",
-					"/Users/wchang/Documents/CroMagRally/build/extern/tinygl/src/Debug/libtinygl-static-watch.a",
+					"/Users/wchang/Documents/CroMagRally/build/extern/Pomme/Debug-watchsimulator/libPomme-watch.a",
+					"/Users/wchang/Documents/CroMagRally/build/extern/tinygl/src/Debug-watchsimulator/libtinygl-static-watch.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.williehwc.CroMagRallyWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";

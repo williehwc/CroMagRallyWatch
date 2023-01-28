@@ -10,7 +10,7 @@ Gameplay runs at 30 to 60 FPS on Apple Watch Series 6. The framerate and other d
 
 ## Known issues
 
-This port is a work in progress. Settings cannot be changed yet, and it has the same graphical issues as the software-rendered [CroMagRally](https://github.com/williehwc/CroMagRally) standalone SDL game, most notably the warped sky box.
+This port is a work in progress. Settings cannot be changed yet, and it has the same graphical issues as the software-rendered [CroMagRally](https://github.com/williehwc/CroMagRally) standalone SDL game.
 
 ## How to play
 
@@ -27,7 +27,7 @@ In the Atlantis course, touch the upper-left quadrant of the screen to ascend, a
 ## Build instructions
 
 1. Clone this repository into a folder on your Mac. Recursively clone (`git clone --recursive`) the [CroMagRally](https://github.com/williehwc/CroMagRally) repository into the same folder so they are side-by-side.
-2. Follow the macOS instructions for [CroMagRally](https://github.com/williehwc/CroMagRally), steps 1 and 4.
+2. Follow the macOS instructions for [CroMagRally](https://github.com/williehwc/CroMagRally), steps 1, 3, and 4.
 3. Open build/CroMagRally.xcodeproj.
 4. Click on the CroMagRally project in the Project Navigator sidebar.
 5. Right-click and duplicate the tinygl-static target, and rename the duplicate to tinygl-static-watch.
@@ -41,8 +41,8 @@ In the Atlantis course, touch the upper-left quadrant of the screen to ascend, a
 13. Open CroMagRallyWatch.xcodeproj from this repository.
 14. Click on the CroMagRallyWatch (not CroMagRally) project in the Project Navigator sidebar.
 15. Click on the CroMagRallyWatch WatchKit Extension target (it has an 🅔 icon).
-16. In Build Settings, change Other Linker Flags and Header Search Paths to reflect your folder structure.
-17. Click Run (the play button); the game should build, install, and run. Intalling to Apple Watch will take time; please be patient.
+16. In Build Settings, change Other Linker Flags and Header Search Paths to reflect your folder structure. Replace `watchsimulator` with `watchos` if you are running on an actual Apple Watch.
+17. Click Run (the play button); the game should build, install, and run. Installing to Apple Watch will take time; please be patient.
 
 ## Credits
 
